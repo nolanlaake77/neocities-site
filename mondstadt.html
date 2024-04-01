@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Mondstadt: The City of Wind</title>
+      <link rel="icon" type="image/x-icon" href="/assets/favicons/mondstadt.ico">
+      <style>
+         body {
+         background-color: #222;
+         color: #fff;
+         font-family: Arial, sans-serif;
+         margin: 0;
+         padding: 0;
+         }
+         .container {
+         max-width: 800px;
+         margin: 0 auto;
+         text-align: center;
+         padding: 20px;
+         position: relative;
+         }
+         .cover-image {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0, 0, 0, 0.8);
+         display: none;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         z-index: 2;
+         }
+         .cover-image img {
+         max-width: 90%;
+         max-height: 70vh;
+         margin-bottom: 10px;
+         }
+         .popup-header {
+         position: absolute;
+         top: 10px;
+         right: 10px;
+         color: #fff;
+         cursor: pointer;
+         z-index: 3;
+         font-size: 24px;
+         }
+         .download-button {
+         width: 30px;
+         height: 30px;
+         margin-left: 10px;
+         cursor: pointer;
+         position: absolute;
+         top: 10px;
+         right: 50px;
+         }
+         .content {
+         position: relative;
+         z-index: 1;
+         }
+         .cover-images {
+         display: flex;
+         justify-content: center;
+         flex-wrap: wrap;
+         margin-top: 20px;
+         }
+         .cover-images a {
+         display: block;
+         margin: 10px;
+         border-radius: 20px;
+         overflow: hidden;
+         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+         }
+         .cover-images img {
+         width: 200px;
+         height: 200px;
+         object-fit: cover;
+         border-radius: 20px;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+      <h1>Mondstadt - The City of Wind</h1>
+      <h4><span style="font-weight:normal">From amongst mountains and wide-open plains, carefree breezes carry the scent of dandelions — a gift from the Anemo God, Barbatos — across Cider Lake to Mondstadt, which sits on an island in the middle of the lake.</h4>
+      <h4><span style="font-weight:normal">Mondstadt is the region where the Traveler’s journey in Teyvet with Paimon begins. The starting town City of Mondstadt, also known as City of Wind or Crown of the North, is the heart of the region.</h4>
+      <p><em>The wind will carry dandelion seeds, songs, and stories far afield, and it also guides gentle Travelers to its realm. </em></p>
+      <p><em>Welcome to Mondstadt.</em></p>
+      <div class="content">
+         <hr>
+         <h2>Brightcrown Mountains</h2>
+         <div class="cover-images">
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Brightcrown_Canyon.webp" data-alt="Brightcrown Canyon"><img src="/assets/genshin/mondstadt/Brightcrown_Canyon.webp" alt="Brightcrown Canyon"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Brightcrown_Mountains.webp" data-alt="Brightcrown Mountains"><img src="/assets/genshin/mondstadt/Brightcrown_Mountains.webp" alt="Brightcrown Mountains"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Brightcrown_Canyon_Entrance_to_Stormterror's_Lair.webp" data-alt="Entrance to Stormterror's Lair"><img src="/assets/genshin/mondstadt/Brightcrown_Canyon_Entrance_to_Stormterror's_Lair.webp" alt="Entrance to Stormterror's Lair"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Decarabian's_Tower.webp" data-alt="Decarabian's Tower"><img src="/assets/genshin/mondstadt/Decarabian's_Tower.webp" alt="Decarabian's Tower"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Stormterror's_Lair.webp" data-alt="Stormterror's Lair"><img src="/assets/genshin/mondstadt/Stormterror's_Lair.webp" alt="Stormterror's Lair"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Boar_Habitat.webp" data-alt="Boar Habitat"><img src="/assets/genshin/mondstadt/Boar_Habitat.webp" alt="Boar Habitat"></a>
+         </div>
+         <hr>
+         <h2>Galesong Hill</h2>
+         <div class="cover-images">
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Cape_Oath.webp" data-alt="Cape Oath"><img src="/assets/genshin/mondstadt/Cape_Oath.webp" alt="Cape Oath"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Dadaupa_Gorge.webp" data-alt="Dadaupa Gorge"><img src="/assets/genshin/mondstadt/Dadaupa_Gorge.webp" alt="Dadaupa Gorge"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Falcon_Coast.webp" data-alt="Falcon Coast"><img src="/assets/genshin/mondstadt/Falcon_Coast.webp" alt="Falcon Coast"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Musk_Reef.webp" data-alt="Musk Reef"><img src="/assets/genshin/mondstadt/Musk_Reef.webp" alt="Musk Reef"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Windrise.webp" data-alt="Windrise"><img src="/assets/genshin/mondstadt/Windrise.webp" alt="Windrise"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Forgotten_Sword_Cemetery.webp" data-alt="Forgotten Sword Cemetery"><img src="/assets/genshin/mondstadt/Forgotten_Sword_Cemetery.webp" alt="Forgotten Sword Cemetery"></a>
+         </div>
+         <hr>
+         <h2>Windwail Highland</h2>
+         <h3><span style="font-weight:normal">Windwail Highland is an area located in Mondstadt.
+            It is home to the idyllic town of Springvale and the chief winery of Mondstadt, Dawn Winery. It also spans far across the wolf-ruled Wolvendom.
+            It is one of the more rustic areas around Mondstadt having clear springs, orchards and lush forests; until one reaches to Wolvendom, which is engulfed in higher enemy activity and is usually a
+         </h3>
+         <div class="cover-images">
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Windwail_Highland.webp" data-alt="Windwail Highland"><img src="/assets/genshin/mondstadt/Windwail_Highland.webp" alt="Windwail Highland"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Dawn_Winery.webp" data-alt="Dawn Winery"><img src="/assets/genshin/mondstadt/Dawn_Winery.webp" alt="Dawn Winery"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Springvale.webp" data-alt="Springvale"><img src="/assets/genshin/mondstadt/Springvale.webp" alt="Springvale"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Wolvendom.webp" data-alt="Wolvendom"><img src="/assets/genshin/mondstadt/Wolvendom.webp" alt="Wolvendom"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Winery_exterior.webp" data-alt="Winery Exterior"><img src="/assets/genshin/mondstadt/Winery_exterior.webp" alt="Winery Exterior"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Drunkard_Gorge.webp" data-alt="Drunkard Gorge"><img src="/assets/genshin/mondstadt/Drunkard_Gorge.webp" alt="Drunkard Gorge"></a>
+         </div>
+         <hr>
+         <h2>Starfell Valley</h2>
+         <h3><span style="font-weight:normal">Starfell Valley is an area located in Mondstadt.
+            It is considered the most diverse region of Mondstadt, spreading far from the tip of Stormbearer Point to the ends of the Whispering Woods. It is also home to the City of Mondstadt in Cider Lake. The area also consists of abundant lakes and tree variety.
+            The area is where the Knights of Favonius's duties primarily takes place, protecting locals and travelers alike with guards patrolling around the area.
+         </h3>
+         <div class="cover-images">
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Starfell_Valley.webp" data-alt="Starfell Valley"><img src="/assets/genshin/mondstadt/Starfell_Valley.webp" alt="Starfell Valley"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Cider_Lake.webp" data-alt="Cider Lake"><img src="/assets/genshin/mondstadt/Cider_Lake.webp" alt="Cider Lake"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Mondstadt_City.webp" data-alt="Mondstadt City"><img src="/assets/genshin/mondstadt/Mondstadt_City.webp" alt="Mondstadt City"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Starfell_Lake.webp" data-alt="Starfell Lake"><img src="/assets/genshin/mondstadt/Starfell_Lake.webp" alt="Starfell Lake"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Starsnatch_Cliff.webp" data-alt="Starsnatch Cliff"><img src="/assets/genshin/mondstadt/Starsnatch_Cliff.webp" alt="Starsnatch Cliff"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Stormbearer_Mountains.webp" data-alt="Stormbearer Mountains"><img src="/assets/genshin/mondstadt/Stormbearer_Mountains.webp" alt="Stormbearer Mountains"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Stormbearer_Point.webp" data-alt="Stormbearer Point"><img src="/assets/genshin/mondstadt/Stormbearer_Point.webp" alt="Stormbearer Point"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Thousand_Winds_Temple.webp" data-alt="Thousand Winds Temple"><img src="/assets/genshin/mondstadt/Thousand_Winds_Temple.webp" alt="Thousand Winds Temple"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Whispering_Woods.webp" data-alt="Whispering Woods"><img src="/assets/genshin/mondstadt/Whispering_Woods.webp" alt="Whispering Woods"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/My_Treasure.webp" data-alt="My Treasure"><img src="/assets/genshin/mondstadt/My_Treasure.webp" alt="My Treasure"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Alchemical_Ascension.webp" data-alt="Alchemical Ascension"><img src="/assets/genshin/mondstadt/Alchemical_Ascension.webp" alt="Alchemical Ascension"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Anemo_Archon_Statue.webp" data-alt="Anemo Archon Statue"><img src="/assets/genshin/mondstadt/Anemo_Archon_Statue.webp" alt="Anemo Archon Statue"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Angel's_Share_Exterior.webp" data-alt="Angel's Share Exterior"><img src="/assets/genshin/mondstadt/Angel's_Share_Exterior.webp" alt="Angel's Share Exterior"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Favonius_Cathedral_Exterior.webp" data-alt="Favonius Cathedral Exterior"><img src="/assets/genshin/mondstadt/Favonius_Cathedral_Exterior.webp" alt="Favonius Cathedral Exterior"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/NPC_Location_Donna_&_Flora.webp" data-alt="NPC Location Donna & Flora"><img src="/assets/genshin/mondstadt/NPC_Location_Donna_&_Flora.webp" alt="NPC Location Donna & Flora"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/NPC_Location_Sara.webp" data-alt="NPC Location Sara"><img src="/assets/genshin/mondstadt/NPC_Location_Sara.webp" alt="NPC Location Sara"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Goth_Grand_Hotel.webp" data-alt="Goth Grand Hotel"><img src="/assets/genshin/mondstadt/Goth_Grand_Hotel.webp" alt="Goth Grand Hotel"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Knights_of_Favonius_Headquarters.webp" data-alt="Knights of Favonius Headquarters"><img src="/assets/genshin/mondstadt/Knights_of_Favonius_Headquarters.webp" alt="Knights of Favonius Headquarters"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Mona's_Laboratory.webp" data-alt="Mona's Laboratory"><img src="/assets/genshin/mondstadt/Mona's_Laboratory.webp" alt="Mona's Laboratory"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/NPC_Location_Blanche.webp" data-alt="NPC Location Blanche"><img src="/assets/genshin/mondstadt/NPC_Location_Blanche.webp" alt="NPC Location Blanche"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Mondstadt_Market_District.webp" data-alt="Mondstadt Market District"><img src="/assets/genshin/mondstadt/Mondstadt_Market_District.webp" alt="Mondstadt Market District"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Nameless_Island.webp" data-alt="Nameless Island"><img src="/assets/genshin/mondstadt/Nameless_Island.webp" alt="Nameless Island"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Schulz's_Blacksmith.webp" data-alt="Schulz's Blacksmith"><img src="/assets/genshin/mondstadt/Schulz's_Blacksmith.webp" alt="Schulz's Blacksmith"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Stormbearer_Coast.webp" data-alt="Stormbearer Coast"><img src="/assets/genshin/mondstadt/Stormbearer_Coast.webp" alt="Stormbearer Coast"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Cat's_Tail_Exterior.webp" data-alt="Cat's Tail Exterior"><img src="/assets/genshin/mondstadt/Cat's_Tail_Exterior.webp" alt="Cat's Tail Exterior"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/NPC_Location_Marjorie.webp" data-alt="NPC Location Marjorie"><img src="/assets/genshin/mondstadt/NPC_Location_Marjorie.webp" alt="NPC Location Marjorie"></a>
+         </div>
+         <hr>
+         <h2>Dragonspine</h2>
+         <h3><span style="font-weight:normal">Dragonspine, historically known as Vindagnyr, is an area located in Mondstadt.
+            It is a vast mountain, engulfed with ancient ruins and snow-capped areas, and also containing the remains of Durin. It was named Vindagnyr prior to Durin's fall.
+            There are some peculiarities with how the snow gathers but never melts on the mountain. Due to its extreme cold, Dragonspine is also one of the most dangerous places in Mondstadt.
+         </h3>
+         <div class="cover-images">
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Sal_Vindagnyr_Mural_1.webp" data-alt="Sal Vindagnyr Mural 1"><img src="/assets/genshin/mondstadt/Sal_Vindagnyr_Mural_1.webp" alt="Sal Vindagnyr Mural 1"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Entombed_City_-_Outskirts.webp" data-alt="Entombed City - Outskirts"><img src="/assets/genshin/mondstadt/Entombed_City_-_Outskirts.webp" alt="Entombed City - Outskirts"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Starglow_Cavern.webp" data-alt="Starglow Cavern"><img src="/assets/genshin/mondstadt/Starglow_Cavern.webp" alt="Starglow Cavern"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Frostbearing_Tree.webp" data-alt="Frostbearing Tree"><img src="/assets/genshin/mondstadt/Frostbearing_Tree.webp" alt="Frostbearing Tree"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Dragonspine.webp" data-alt="Dragonspine"><img src="/assets/genshin/mondstadt/Dragonspine.webp" alt="Dragonspine"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Albedo's_Campsite.webp" data-alt="Albedo's Campsite"><img src="/assets/genshin/mondstadt/Albedo's_Campsite.webp" alt="Albedo's Campsite"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Entombed_City_-_Ancient_Palace.webp" data-alt="Entombed City - Ancient Palace"><img src="/assets/genshin/mondstadt/Entombed_City_-_Ancient_Palace.webp" alt="Entombed City - Ancient Palace"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Wyrmrest_Valley.webp" data-alt="Wyrmrest Valley"><img src="/assets/genshin/mondstadt/Wyrmrest_Valley.webp" alt="Wyrmrest Valley"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Skyfrost_Nail.webp" data-alt="Skyfrost Nail"><img src="/assets/genshin/mondstadt/Skyfrost_Nail.webp" alt="Skyfrost Nail"></a>
+            <a href="javascript:void(0)" class="popup-link" data-src="/assets/genshin/mondstadt/Snow-Covered_Path.webp" data-alt="Snow-Covered Path"><img src="/assets/genshin/mondstadt/Snow-Covered_Path.webp" alt="Snow-Covered Path"></a>
+         </div>
+      </div>
+      <div class="cover-image" id="popup-container">
+         <span class="popup-header" onclick="closePopup()">&times;</span>
+         <img id="popup-image" src="" alt="Popup Image">
+         <p id="image-name"></p>
+         <img class="download-button" src="/assets/download.png" alt="Download">
+      </div>
+      <script>
+         const popupLinks = document.querySelectorAll('.popup-link');
+         const popupContainer = document.getElementById('popup-container');
+         const popupImage = document.getElementById('popup-image');
+         const imageName = document.getElementById('image-name');
+         const downloadButton = document.querySelector('.download-button');
+         
+         popupLinks.forEach(link => {
+           link.addEventListener('click', function(event) {
+             event.preventDefault();
+             const imageUrl = this.getAttribute('data-src');
+             const altText = this.getAttribute('data-alt');
+             popupImage.src = imageUrl;
+             imageName.textContent = altText;
+             popupContainer.style.display = 'flex';
+         
+             // Calculate the position of the popup relative to the scroll position
+             const scrollY = window.scrollY || window.pageYOffset;
+             const topOffset = scrollY + (window.innerHeight - popupContainer.offsetHeight) / 2;
+             const leftOffset = (window.innerWidth - popupContainer.offsetWidth) / 2;
+         
+             popupContainer.style.top = `${topOffset}px`;
+             popupContainer.style.left = `${leftOffset}px`;
+           });
+         });
+         
+         function closePopup() {
+           popupContainer.style.display = 'none';
+         }
+         
+         downloadButton.addEventListener('click', function() {
+           const imageUrl = popupImage.src;
+           const a = document.createElement('a');
+           a.href = imageUrl;
+           a.download = 'image';
+           document.body.appendChild(a);
+           a.click();
+           document.body.removeChild(a);
+         });
+      </script>
+      <footer>
+         <div>
+            <p>&copy; 2024 YourName. All rights reserved. | <a href="https://github.com/yourusername">GitHub</a></p>
+         </div>
+      </footer>
+   </body>
+</html>

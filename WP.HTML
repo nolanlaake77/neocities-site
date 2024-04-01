@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallpaper Sharing</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Ubuntu", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 16px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li button {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 15px;
+            border-radius: 20px;
+            background-color: #888;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li button:hover {
+            background-color: #aaa;
+        }
+
+        #gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 20px;
+        }
+
+        .wallpaper {
+            display: block;
+            padding: 8px;
+        }
+
+        .wallpaper > img {
+            width: 276px;
+            height: 180px;
+            object-fit: cover;
+            transform: scale(0.95);
+            transition: transform 200ms;
+            border-radius: 8px;
+            box-shadow: 0px 2px 16px #0002;
+        }
+
+        .wallpaper:hover > img {
+            transform: scale(1);
+        }
+
+        @media (max-width: 540px) {
+            #gallery {
+                display: block;
+            }
+
+            .wallpaper > img {
+                width: 100%;
+                height: unset;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wallpaper Sharing</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><button class="category-button" onclick="showCategory('os')">Operating Systems</button></li>
+            <li><button class="category-button" onclick="showCategory('phones')">Phones</button></li>
+        </ul>
+    </nav>
+    <div id="os" class="category">
+        <h2>Operating Systems</h2>
+        <div id="gallery">
+            <a download class="wallpaper" href="/wallpapers/4.10.png"><img src="/wallpapers/thumbnails/4.10.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/5.04.png"><img src="/wallpapers/thumbnails/5.04.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/5.10.png"><img src="/wallpapers/thumbnails/5.10.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/6.06.png"><img src="/wallpapers/thumbnails/6.06.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/6.10.png"><img src="/wallpapers/thumbnails/6.10.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/7.04.png"><img src="/wallpapers/thumbnails/7.04.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/7.10.png"><img src="/wallpapers/thumbnails/7.10.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/8.04.png"><img src="/wallpapers/thumbnails/8.04.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/8.10.jpg"><img src="/wallpapers/thumbnails/8.10.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/9.04.jpg"><img src="/wallpapers/thumbnails/9.04.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/9.10.jpg"><img src="/wallpapers/thumbnails/9.10.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/10.04.jpg"><img src="/wallpapers/thumbnails/10.04.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/10.10.jpg"><img src="/wallpapers/thumbnails/10.10.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/11.04.png"><img src="/wallpapers/thumbnails/11.04.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/11.10.png"><img src="/wallpapers/thumbnails/11.10.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/12.04.png"><img src="/wallpapers/thumbnails/12.04.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/12.10.png"><img src="/wallpapers/thumbnails/12.10.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/13.04.png"><img src="/wallpapers/thumbnails/13.04.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/13.10.png"><img src="/wallpapers/thumbnails/13.10.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/14.04.png"><img src="/wallpapers/thumbnails/14.04.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/14.10.png"><img src="/wallpapers/thumbnails/14.10.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/15.04.png"><img src="/wallpapers/thumbnails/15.04.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/15.10.png"><img src="/wallpapers/thumbnails/15.10.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/16.04.png"><img src="/wallpapers/thumbnails/16.04.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/16.10.png"><img src="/wallpapers/thumbnails/16.10.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/17.04.png"><img src="/wallpapers/thumbnails/17.04.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/17.10.png"><img src="/wallpapers/thumbnails/17.10.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/18.04.png"><img src="/wallpapers/thumbnails/18.04.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/18.10.png"><img src="/wallpapers/thumbnails/18.10.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/19.04.png"><img src="/wallpapers/thumbnails/19.04.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/19.10.png"><img src="/wallpapers/thumbnails/19.10.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/20.04.png"><img src="/wallpapers/thumbnails/20.04.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/20.10.png"><img src="/wallpapers/thumbnails/20.10.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/21.04.png"><img src="/wallpapers/thumbnails/21.04.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/21.10.png"><img src="/wallpapers/thumbnails/21.10.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/22.04.png"><img src="/wallpapers/thumbnails/22.04.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/22.10.png"><img src="/wallpapers/thumbnails/22.10.webp" alt="" title=""></a>
+            <a download class="wallpaper" href="/wallpapers/23.04.png"><img src="/wallpapers/thumbnails/23.04.webp" alt="" title=""></a>
+        </div>
+    </div>
+    <footer>
+        <p>Ubuntu is a registered trademark of Canonical Ltd.</p>
+    </footer>
+    <script>
+        document.querySelectorAll(".wallpaper > img").forEach((element) => {
+            element.oncontextmenu = (event) => {
+                event.preventDefault();
+            }
+        })
+    </script>
+</body>
+</html>

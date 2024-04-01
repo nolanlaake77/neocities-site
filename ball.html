@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    /* Define the image's initial position */
+    #ball {
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events:none;
+    }
+</style>
+<script>
+    function bounceImage() {
+        var ball = document.getElementById("ball");
+        var xPos = 0;
+        var yPos = 0;
+        var xSpeed = 5; // Horizontal speed
+        var ySpeed = 5; // Vertical speed
+        
+/* Change the ySpeed and xSpeed to adjust the speed */
+
+        setInterval(function() {
+            var containerWidth = window.innerWidth - ball.offsetWidth;
+            var containerHeight = window.innerHeight - ball.offsetHeight;
+
+            // Calculate the new position
+            xPos += xSpeed;
+            yPos += ySpeed;
+
+            // Check for collisions with the container edges
+            if (xPos <= 0 || xPos >= containerWidth) {
+                xSpeed *= -1; // Reverse horizontal direction
+            }
+
+            if (yPos <= 0 || yPos >= containerHeight) {
+                ySpeed *= -1; // Reverse vertical direction
+            }
+
+            // Update the image position
+            ball.style.left = xPos + "px";
+            ball.style.top = yPos + "px";
+        }, 10);
+    }
+</script>
+</head>
+<body onload="bounceImage()">
+    <img id="ball" src="/assets/img.png" alt="Bouncing Ball">
+</body>
+</html>
